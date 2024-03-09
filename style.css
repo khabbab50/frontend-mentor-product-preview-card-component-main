@@ -1,0 +1,180 @@
+/* ==============================================================================================================
+fnt start
+===============================================================================================================*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* ==============================================================================================================
+fnt end
+===============================================================================================================*/
+
+/* ==============================================================================================================
+univarsel sector start
+===============================================================================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+:root {
+  /* font start  */
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Fraunces", serif;
+  /* font ebd */
+
+  /* color start  */
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+  /* color end */
+}
+p {
+  font-size: 14px;
+}
+/* ==============================================================================================================
+univarsel sector end
+===============================================================================================================*/
+
+body {
+  max-width: 1440px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  background: var(--Cream);
+  margin-top: 100px;
+}
+
+/* ==============================================================================================================
+main start
+===============================================================================================================*/
+.main {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+}
+.main .image {
+  width: 50%;
+  height: 100%;
+  background: url(./images/image-product-desktop.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.main .content {
+  padding: 35px;
+  width: 50%;
+  background: var(--White);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.main .content .perfum {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  color: var(--Dark-grayish-blue);
+}
+.main .content h1 {
+  font-family: var(--secondary-font);
+  color: var(--Very-dark-blue);
+  margin: 20px 0;
+  font-weight: 700;
+}
+.main .content p {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  color: var(--Dark-grayish-blue);
+}
+.main .content .pric {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin: 20px 0;
+}
+.main .content .pric h2 {
+  color: var(--Dark-cyan);
+  font-family: var(--secondary-font);
+  font-size: 30px;
+}
+.main .content .pric del {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  color: var(--Dark-grayish-blue);
+}
+.main .content .btn {
+  width: 100%;
+  padding: 20px 0;
+  border: none;
+  border-radius: 8px;
+  color: var(--White);
+  font-weight: 700;
+  background: var(--Dark-cyan);
+  cursor: pointer;
+}
+.main .content .btn:hover {
+  background: var(--Very-dark-blue);
+}
+/* ==============================================================================================================
+main end
+===============================================================================================================*/
+
+/* ==============================================================================================================
+frontend mentor start
+===============================================================================================================*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 50px 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* ==============================================================================================================
+frontend mentor end
+===============================================================================================================*/
+
+/* ==============================================================================================================
+mobile responsive media quary start
+===============================================================================================================*/
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .main {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 35rem;
+  }
+  .main .image {
+    width: 90%;
+    height: 250px;
+    background: url(./images/image-product-mobile.jpg);
+    background-size: 100% 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+  }
+  .main .content {
+    width: 90%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .main .content h1 {
+    font-size: 30px;
+  }
+}
+/* ==============================================================================================================
+mobile responsive media quary end
+===============================================================================================================*/
